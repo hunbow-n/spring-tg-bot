@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: spring-bot
+telegram:
+  bot:
+   token: 7326657139:AAHJAWwZ5pqtjzmvlINsWRzL17QaMjmzwMQ
