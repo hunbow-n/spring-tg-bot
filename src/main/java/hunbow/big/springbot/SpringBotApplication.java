@@ -18,18 +18,19 @@ public class SpringBotApplication {
         SpringApplication.run(SpringBotApplication.class, args);
     }
 
-    @Bean
-    public ApplicationRunner runner(TelegramClient telegramClient) {
-        return  args -> {
-            try {
-                TelegramBotsLongPollingApplication botsApplication = new TelegramBotsLongPollingApplication();
-                botsApplication.registerBot(botToken, new TelegramBotService(telegramClient));
-            } catch (Exception ex) {
-                System.out.println(ex.getMessage());
-                throw new RuntimeException(ex);
-            }
-        };
+//    @Bean
+//    public ApplicationRunner runner(TelegramClient telegramClient) {
+//        return  args -> {
+//            try {
+//                TelegramBotsLongPollingApplication botsApplication = new TelegramBotsLongPollingApplication();
+//                botsApplication.registerBot(botToken, new TelegramBotService(telegramClient));
+//            } catch (Exception ex) {
+//                System.out.println(ex.getMessage());
+//                throw new RuntimeException(ex);
+//            }
+//        };
+//    }
 
 
-    }
+
 }

@@ -1,6 +1,20 @@
 spring:
   application:
     name: spring-bot
+  ai:
+    openai:
+      api-key: sk-6K5iL2pbJvZlMGQLeZf4TT3vLqT2cdrl
+      base-url: https://api.proxyapi.ru/openai
+      chat:
+        options:
+          model: gpt-4o-mini
+    retry:
+      max-attempts: 1
+
 telegram:
   bot:
    token: 7326657139:AAHJAWwZ5pqtjzmvlINsWRzL17QaMjmzwMQ
+proxy:
+  api:
+   key: sk-6K5iL2pbJvZlMGQLeZf4TT3vLqT2cdrl
+
